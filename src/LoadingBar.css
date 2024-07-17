@@ -1,0 +1,21 @@
+/* LoadingBar.css */
+@keyframes loading {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+.loading-bar {
+    height: 2px;
+    background: linear-gradient(45deg, 
+        rgb(228, 64, 95),   /* Red/Pink */
+        rgb(193, 53, 132),  /* Purple */
+        rgb(131, 58, 180),  /* Deep Blue/Purple */
+        rgb(73, 89, 173),   /* Blue */
+        rgb(252, 176, 69),   /* Yellow */
+        rgb(76, 170, 232),  /* Light Blue */
+        rgb(69, 182, 73),   /* Green */
+        rgb(252, 176, 69)   /* Yellow */
+    );
+    background-size: 200% 200%;
+    animation: loading 1.5s infinite;
+}

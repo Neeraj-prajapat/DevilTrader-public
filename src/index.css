@@ -1,0 +1,442 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Urbanist, sans-serif;
+
+}
+
+:root{
+  --bs-dark-color: #1a1d20;
+  --bs-dark-primary:#1c1c1c;
+  --bs-main-color:#fff;
+  --bs-primary-color:#c6c6c6;
+  --secondary-color: #29a9fd;
+  --bs-supporting-color: #C850C0;
+}
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+h1, h2,h3,h4,h5{
+font-family: 'Lexend Deca', sans-serif;
+color: var( --bs-dark-color);
+}
+
+h1{
+font-size: 3.8rem;
+}
+
+h2{
+line-height: 4rem;
+font-weight: 600;
+font-size: 3.4rem;
+}
+
+
+
+p{
+margin: 0;
+font-weight: 400;
+font-size: 1rem;
+color: var( --bs-dark-color);
+letter-spacing: 0.07rem;
+line-height: 1.55rem;
+font-synthesis: none;
+text-rendering: optimizeLegibility;
+text-align:justify;
+}
+
+
+a{
+text-decoration: none;
+display: inline-block;
+}
+
+li{
+  list-style: none;
+}
+
+.btn, a{
+  font-size:1.15rem !important;
+  letter-spacing: 0.03rem;
+  word-spacing: 0.1rem;
+}
+
+
+
+
+
+/* navbar styling */
+
+.nav-link{
+  color:var(--bs-main-color)
+}
+
+.nav-link:hover{
+  color:var(--bs-supporting-color)
+}
+
+/*? when you do not want toggle cross and hamburger button  */
+
+/* .navbar-toggler{ */
+  /* border-color:var(--bs-main-color); */
+  /* color: white; */
+  /* border-color: none */
+  /* border: 1px solid white; */
+  /* --bs-navbar-toggler-focus-width: 0;  */
+/* } */
+
+/* .navbar-toggler-icon{
+  color:var(--bs-main-color);
+  background-color: var(--bs-main-color);
+} */
+
+
+   /* .navbar-toggler .navbar-toggler-icon{
+    background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+  } */
+
+  /*? end */
+
+  /*? when you want toggle cross and hamburger button */
+  
+/* Base styles for the navbar-toggler button */
+.navbar-toggler {
+  --bs-navbar-toggler-focus-width: 0; /* Removes the focus border */
+  
+  
+}
+
+/* Base styles for the hamburger icon */
+.navbar-toggler-icon {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+}
+
+/* Styles for the cross icon when the button is active */
+.navbar-toggler.active .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.75)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M6 6l18 18M6 24L24 6' /%3e%3c/svg%3e");
+}
+
+/*? end */
+
+
+/* hero-section-start */
+
+.bg-color{
+  background-color: var(--bs-dark-color);
+}
+
+.bg-main{
+  /* height: auto; */
+  height: 80vh; 
+  position: relative;
+}
+
+
+ /* Media queries for smaller screens */
+@media screen and (max-width:992px) {
+  .hero-video--section {
+    max-width:80%;
+    /* width: 20rem; */
+    height: auto;
+  }
+
+} 
+
+@media screen  and (max-width:992px) {
+  h1{
+    font-size:2.4rem;
+  }
+  
+  section .common-heading{
+    font-size:2rem;
+  }
+
+  section .para-width{
+    width:auto;
+  }
+  
+  .hero-section{
+    height: 100vh;
+  }
+
+  h2{
+    line-height: 2.9rem;
+    font-weight: 600;
+    font-size: 2.2rem;
+    }
+
+    .carousel .carousel-indicators{
+      bottom: -8%;
+    }
+
+    .contact-section .form-section{
+      width: 100%;
+  }
+
+}
+
+.hero-section .container{
+  display: grid;
+  place-items:center;
+  height:inherit;
+}
+
+/* .text-light-grey{
+  color:var(--bs-primary-color)
+} */
+
+
+/* .hero-section .container .row{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height:80vh;                           inherit property is not worked in flex its a property of grid
+} */
+
+/* .hero-section .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height:80vh;                          
+} */
+
+
+.hero-video--section{
+  /*max-width: 100%;
+  *//*height:auto;
+  */width: 27rem;
+  border-radius:1rem;
+  -webkit-border-radius:;
+  -moz-border-radius:;
+  -ms-border-radius:;
+  -o-border-radius:;
+  order: 1;
+}
+
+
+/*shape divider start */
+
+
+
+.custom-shape-divider-bottom-1720771051 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1720771051 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 108px;
+}
+
+.custom-shape-divider-bottom-1720771051 .shape-fill {
+  fill: #FFFFFF;
+}
+
+/*shape dividers end */
+
+.common-section{
+  padding: 0 0 9rem 0;
+}
+
+
+/* services styling */
+
+.common-heading{
+  font-size: 2.8rem;
+  font-weight: 500px;
+  letter-spacing: 0.01rem !important;
+}
+
+.common-title{
+  margin-bottom: 4.2rem;
+}
+
+.services-section{
+  /* margin-top: 2.5rem; */
+  padding:6rem 0 3rem 0 !important;
+}
+
+.card-marketing{
+  /* width: 18rem; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+
+.card-marketing .card-img-top{
+  width: 200px;
+
+}
+
+.icon-span {
+  display: inline-block; 
+  width: 2.5rem;           
+  height: 2.5rem;
+  background-color: var(--bs-supporting-color);
+  color:var(--bs-main-color)    
+}
+
+.card-marketing:hover{
+  box-shadow: rgb(149,157,165,0.2) 0 8px 24px;
+}
+
+/* about/more-info-section styling */
+
+.more-info-section{
+    background-image: linear-gradient(rgba(22,22,22,0.7), rgba(22,22,22,0.7)), url("https://images.pexels.com/photos/316093/pexels-photo-316093.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+
+
+.more-info-section .img-section img{
+  width:70%;
+}
+
+
+/* advertising images */
+
+.advertising-img{
+  width: 28%;
+}
+
+/* testimonial-section */
+
+.carousel .card{
+  background-color: #262631;
+  color: var(--bs-main-color);
+
+}
+
+.carousel-inner .card p{
+  color: var(--bs-main-color);
+}
+.carousel-inner .card:hover{
+  background-color: var(--bs-main-color);
+  color: var(--bs-dark-color);
+}
+
+.carousel-inner .card:hover p{
+  color: var(--bs-dark-color);
+}
+
+.fa-star{
+  color: var(--bs-supporting-color);
+}
+
+.carousel-indicators{
+  bottom:-20%;
+}
+
+.carousel-indicators #carouselExampleIndicators{
+  width: 0.7rem;
+  height: 0.7rem;
+  color: var(--secondary-color);
+}
+
+/* Contact Styling */
+
+.contact-section{
+  position: relative;
+}
+.custom-shape-divider-top-1721010597 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1721010597 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 10rem;
+}
+
+.custom-shape-divider-top-1721010597 .shape-fill {
+  fill: #FFFFFF;
+}
+
+.contact-section .common-title{
+  padding-top:6rem;
+}
+
+.contact-section .form-section{
+  width: 50%;
+}
+
+/* footer-section styling */
+
+.main-footer-section{
+  padding: 0 0 4rem 0;
+  background-color: #222;
+  color: var(--bs-main-color);
+}
+
+.contact-div{
+  background-color:var(--bs-dark-color);
+}
+
+.icon-div{
+  width: 5rem;
+  height: 5rem;
+}
+
+ul{
+  
+  font-weight: 400;
+  font-size: 1rem;
+  
+  letter-spacing: 0.07rem;
+  line-height: 1.90rem;
+  font-synthesis: none;
+
+  }
+
+  .bg-theme{
+    color: var(--bs-supporting-color);
+    background-image: none !important;
+  }
