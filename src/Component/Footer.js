@@ -94,17 +94,17 @@ export default function Footer() {
                 
                     <div className='col-lg-4 col-12'>
                         <div className='d-flex justify-content-center justify-content-lg-end mt-lg-0 gap-5 mt-3'>
-                            <a href="https://www.instagram.com/thapatechnical/" target="_blank">
+                            <a href="https://www.youtube.com/@algolyte/" target="_blank">
                                 <div class="icon-span d-flex justify-content-center align-items-center rounded-circle mb-3">
                                     <i class="fa-brands fa-instagram"></i>
                                 </div>
                             </a>
-                            <a href="https://www.instagram.com/thapatechnical/" target="_blank">
+                            <a href="https://www.youtube.com/@algolyte/" target="_blank">
                                 <div class="icon-span d-flex justify-content-center align-items-center rounded-circle mb-3">
                                     <i class="fa-brands fa-whatsapp"></i>
                                 </div>
                             </a>
-                            <a href="https://www.instagram.com/thapatechnical/" target="_blank">
+                            <a href="www.youtube.com/@algolyte/" target="_blank">
                                 <div class="icon-span d-flex justify-content-center align-items-center rounded-circle mb-3">
                                     <i class="fa-brands fa-twitter"></i>
                                 </div>
