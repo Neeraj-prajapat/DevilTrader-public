@@ -90,7 +90,7 @@ useEffect(() => {
       }
       return nextProgress;
     });
-  }, 300); // Adjust this interval to control loading speed
+  }, 30); // Adjust this interval to control loading speed
 
   // Clean up the interval on component unmount
   return () => {
